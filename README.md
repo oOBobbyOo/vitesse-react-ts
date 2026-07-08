@@ -17,12 +17,15 @@ The React Compiler is not enabled on this template because of its impact on dev 
 
 If you are developing a production application, we recommend enabling type-aware lint rules by installing `oxlint-tsgolint` and editing `.oxlintrc.json`:
 
+[oxlint-tsgolint](https://github.com/oxc-project/tsgolint#installation--usage)
+
 ```json
 {
     "$schema": "./node_modules/oxlint/configuration_schema.json",
     "plugins": ["react", "typescript", "oxc"],
     "options": {
-        "typeAware": true
+        "typeAware": true,
+        "typeCheck": true
     },
     "rules": {
         "react/rules-of-hooks": "error",
