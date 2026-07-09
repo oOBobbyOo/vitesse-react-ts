@@ -1,8 +1,8 @@
 import { createBrowserRouter } from 'react-router'
 
-import RootLayout from '../layouts/RootLayout'
-import App from '../pages/App/App'
-import NotFound from '../pages/NotFound'
+import RootLayout from '@/layouts/RootLayout'
+import App from '@/pages/App/App'
+import NotFound from '@/pages/NotFound'
 
 let router = createBrowserRouter([
   {
