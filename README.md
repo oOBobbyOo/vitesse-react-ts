@@ -79,12 +79,16 @@ See the [config-file-reference](https://oxc.rs/docs/guide/usage/formatter/config
 
 ## simple-git-hooks
 
-[simple-git-hooks](https://github.com/toplenboren/simple-git-hooks#simple-git-hooks)
+See the [simple-git-hooks](https://github.com/toplenboren/simple-git-hooks#simple-git-hooks)
 
 ## lint-staged
 
-[lint-staged](https://github.com/lint-staged/lint-staged#-lint-staged)
+See the [lint-staged](https://github.com/lint-staged/lint-staged#-lint-staged)
 
 ## nano-staged
 
 [nano-staged](https://github.com/usmanyunusov/nano-staged#getting-started)
+
+## lightningcss
+
+See the [lightningcss with vite](https://lightningcss.dev/docs.html#with-vite)
