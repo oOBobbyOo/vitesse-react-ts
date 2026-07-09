@@ -4,7 +4,7 @@ const NotFound = () => {
   const location = useLocation()
 
   return (
-    <div style={{ textAlign: 'center', padding: '4rem 2rem' }}>
+    <div className="flex items-center justify-center flex-col min-h-svh">
       <h1>404</h1>
       <h4>页面未找到</h4>
       <p>
