@@ -10,7 +10,8 @@
     "lint:fix": "oxlint --fix",
     "fmt": "oxfmt",
     "fmt:check": "oxfmt --check",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "postinstall": "npx simple-git-hooks"
   },
   "dependencies": {
     "react": "^19.2.7",
@@ -26,6 +27,7 @@
     "@vitejs/plugin-react": "^6.0.3",
     "babel-plugin-react-compiler": "^1.0.0",
     "lint-staged": "^17.0.8",
+    "nano-staged": "^1.0.2",
     "oxfmt": "^0.58.0",
     "oxlint": "^1.71.0",
     "oxlint-tsgolint": "^0.24.0",
@@ -34,10 +36,11 @@
     "vite": "^8.1.1"
   },
   "simple-git-hooks": {
-    "pre-commit": "pnpm lint-staged"
+    "pre-commit": "./node_modules/.bin/nano-staged",
+    "pre-push": "pnpm run build"
   },
-  "lint-staged": {
-    "*.{js,jsx,ts,tsx,mjs,cjs}": "pnpm run lint",
+  "nano-staged": {
+    "*.{js,jsx,ts,tsx,mjs,cjs}": "pnpm run lint:fix",
     "*": "oxfmt --no-error-on-unmatched-pattern"
   }
 }

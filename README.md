@@ -84,3 +84,7 @@ See the [config-file-reference](https://oxc.rs/docs/guide/usage/formatter/config
 ## lint-staged
 
 [lint-staged](https://github.com/lint-staged/lint-staged#-lint-staged)
+
+## nano-staged
+
+[nano-staged](https://github.com/usmanyunusov/nano-staged#getting-started)
