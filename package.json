@@ -10,6 +10,7 @@
     "lint:fix": "oxlint --fix",
     "fmt": "oxfmt",
     "fmt:check": "oxfmt --check",
+    "lint:fmt": "pnpm run lint:fix && pnpm run fmt",
     "preview": "vite preview",
     "postinstall": "npx simple-git-hooks"
   },
