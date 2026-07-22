@@ -7,13 +7,13 @@ import { env } from '@/validators/env.validator'
  * @param defaultValue 默认值
  * @returns 环境变量值
  */
-export function getEnv(key: string, defaultValue?: string): string | boolean {
+export function getEnv(key: string, defaultValue?: string): string {
   // Vite 环境变量必须以 VITE_ 开头
   const viteKey = `VITE_${key.toUpperCase()}`
   const value = env[viteKey as keyof typeof env]
 
   if (value !== undefined) {
-    return value
+    return String(value)
   }
 
   if (defaultValue !== undefined) {

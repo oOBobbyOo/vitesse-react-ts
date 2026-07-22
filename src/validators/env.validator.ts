@@ -22,7 +22,7 @@ export const envSchema = z.object({
   /** 应用标题 */
   VITE_APP_TITLE: z.string().default('Vitesse React TS'),
   /** API 基础地址 */
-  VITE_API_BASE_URL: z.string(),
+  VITE_API_BASE_URL: z.string().default(''),
   /** API 前缀 */
   VITE_API_PREFIX: z.string().default('/api'),
 })
