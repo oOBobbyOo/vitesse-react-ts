@@ -4,9 +4,9 @@ import heroImg from '@/assets/hero.png'
 import reactLogo from '@/assets/react.svg'
 import viteLogo from '@/assets/vite.svg'
 
-import './App.css'
+import './index.css'
 
-function App() {
+function Welcome() {
   const [count, setCount] = useState(0)
 
   return (
@@ -20,7 +20,7 @@ function App() {
         <div>
           <h1>Get started</h1>
           <p>
-            Edit <code>src/App.tsx</code> and save to test <code>HMR</code>
+            Edit <code>src/Welcome/index.tsx</code> and save to test <code>HMR</code>
           </p>
         </div>
         <button type="button" className="counter" onClick={() => setCount((count) => count + 1)}>
@@ -101,4 +101,4 @@ function App() {
   )
 }
 
-export default App
+export default Welcome

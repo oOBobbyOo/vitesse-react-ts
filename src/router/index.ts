@@ -1,15 +1,15 @@
 import { createBrowserRouter } from 'react-router'
 
 import RootLayout from '@/layouts/RootLayout'
-import App from '@/pages/App/App'
 import NotFound from '@/pages/NotFound'
+import Welcome from '@/pages/Welcome'
 
 let router = createBrowserRouter([
   {
     path: '/',
     Component: RootLayout,
     children: [
-      { index: true, Component: App },
+      { index: true, Component: Welcome },
       { path: '*', Component: NotFound },
     ],
   },
