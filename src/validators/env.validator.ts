@@ -25,6 +25,12 @@ export const envSchema = z.object({
   VITE_API_BASE_URL: z.string().default(''),
   /** API 前缀 */
   VITE_API_PREFIX: z.string().default('/api'),
+  /** React Query 开发者工具 */
+  VITE_REACT_QUERY_DEVTOOLS: z
+    .enum(['true', 'false'])
+    .default('false')
+    .transform((val) => val === 'true')
+    .pipe(z.boolean()),
 })
 
 /**
